@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import ArtificialDom from "./roomComponents/ArtificialDom";
 import ArtificialDomAnswer from "./roomComponentsAnswer/ArtificialDom";
+import ArtificialDomContextAPI from "./roomComponentsContextAPI/ArtificialDom";
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -74,8 +75,9 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <ArtificialDom />
+      {/* <ArtificialDom /> */}
       {/* <ArtificialDomAnswer /> */}
+      <ArtificialDomContextAPI />
     </>
   );
 }
