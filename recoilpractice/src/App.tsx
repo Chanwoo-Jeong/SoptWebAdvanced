@@ -2,6 +2,8 @@ import { createGlobalStyle } from "styled-components";
 import ArtificialDom from "./roomComponents/ArtificialDom";
 import ArtificialDomAnswer from "./roomComponentsAnswer/ArtificialDom";
 import ArtificialDomContextAPI from "./roomComponentsContextAPI/ArtificialDom";
+import ArtificialDomRecoil from "./roomComponentsRecoil/ArtificialDom";
+import { RecoilRoot } from "recoil";
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -77,7 +79,10 @@ function App() {
       <GlobalStyle />
       {/* <ArtificialDom /> */}
       {/* <ArtificialDomAnswer /> */}
-      <ArtificialDomContextAPI />
+      {/* <ArtificialDomContextAPI /> */}
+      <RecoilRoot>
+        <ArtificialDomRecoil />
+      </RecoilRoot>
     </>
   );
 }
